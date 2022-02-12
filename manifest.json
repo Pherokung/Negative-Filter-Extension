@@ -2,7 +2,7 @@
     "name": "Positive Filter",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Blur the Negative tweet",
+    "description": "Blur the Negative tweets",
     "content_scripts": [{
         "matches": ["https://twitter.com/*", "http://twitter.com/*"],
         "js": ["inject.js"]
