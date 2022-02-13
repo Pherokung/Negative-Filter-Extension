@@ -1,5 +1,5 @@
 # What does this Chrome Extension do
-Blur the Negative tweets (Only Thai words)
+Blur the Negative tweets on Twitter (Only Thai words)
 
 # Getting Started
 
