@@ -142,12 +142,6 @@ class Cache {
             req.onload = function() {
                 if(cache.get(a.innerText) == undefined){
                     let response = JSON.parse(req.responseText).prediction;
-                    console.log(a.innerText)
-                    console.log("response is")
-                    console.log(response)
-                    console.log(cache._size)
-                    console.log(cache.get(a.innerText))
-                    console.log("---------")    
                     
                     if (response == 'Negative') {
                         cache.set(a.innerText,1)
@@ -162,17 +156,12 @@ class Cache {
             }
 
             if(a.innerText.length >= 20){
-                //console.log(a.innerText)
-                //console.log("val = ")
-                //console.log(val)
-                //console.log('==============')
                 if(cache.get(a.innerText) == undefined){
                     let sendData = JSON.stringify(
                         {
                             "text": a.innerText
                         }
                     );
-                    //console.log(sendData)
                     req.send(sendData);      
                 }
                 else if(cache.get(a.innerText) == 1){
