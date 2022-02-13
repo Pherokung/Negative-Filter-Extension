@@ -1,4 +1,4 @@
-# What this extension can do
+# What does this Chrome Extension do
 Blur the Negative tweets (Only Thai words)
 
 # Getting Started
