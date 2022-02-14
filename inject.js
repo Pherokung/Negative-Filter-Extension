@@ -196,6 +196,6 @@ class Cache {
                 allDescendants(all[i])
             }
         }
-    }, 250);
+    }, 500);
 
 })();
